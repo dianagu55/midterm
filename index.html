@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <h2>Image side by side</h2>
+    <p>How to create side-by-side images with the CSS float property:</p>
+
+    
+    <div class="row">
+        <div class="column">
+            <img src="images3.jpg" alt="Karol G, a latin america singer" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="image4.jpg" alt="Camila Cabello, a cuban singer" style="width: 100%;"> 
+        </div>
+        <div class="column">
+            <img src="image2.jpg" alt="Billie Eilish" style="width:100%">
+        </div>
+    </div>
+</body>
+</html>
